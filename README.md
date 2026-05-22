@@ -1,2 +1,2 @@
 ﻿# poo-estructuras
-Santiago
+Santiago Bohorquez, Marlon Rivera y Samuel Valencia
