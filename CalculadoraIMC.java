@@ -2,13 +2,13 @@ import java.util.Scanner;
 
 public class CalculadoraIMC {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner fl = new Scanner(System.in);
 
         System.out.print("Ingrese el peso en kilogramos: ");
-        double peso = scanner.nextDouble();
+        double peso = fl.nextDouble();
 
         System.out.print("Ingrese la estatura en metros: ");
-        double estatura = scanner.nextDouble();
+        double estatura = fl.nextDouble();
 
         double imc = peso / Math.pow(estatura, 2);
 
@@ -24,6 +24,6 @@ public class CalculadoraIMC {
             System.out.println("Categoría: Obesidad");
         }
 
-        scanner.close();
+        fl.close();
     }
 }
