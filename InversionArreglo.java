@@ -2,14 +2,14 @@ import java.util.Scanner;
 
 public class InversionArreglo {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sv = new Scanner(System.in);
 
         System.out.print("Ingrese el tamaño del arreglo (máximo 20): ");
-        int n = scanner.nextInt();
+        int n = sv.nextInt();
 
         if (n < 1 || n > 20) {
             System.out.println("Tamaño no válido.");
-            scanner.close();
+            sv.close();
             return;
         }
 
@@ -17,7 +17,7 @@ public class InversionArreglo {
 
         for (int i = 0; i < n; i++) {
             System.out.printf("Ingrese el elemento %d: ", i);
-            arreglo[i] = scanner.nextInt();
+            arreglo[i] = sv.nextInt();
         }
 
         System.out.print("Original:  ");
@@ -38,6 +38,6 @@ public class InversionArreglo {
         }
         System.out.println();
 
-        scanner.close();
+        sv.close();
     }
 }
